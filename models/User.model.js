@@ -5,7 +5,7 @@ const { Schema, model } = mongoose;
 
 const userSchema = new Schema({
     name: String,
-    balance: Number,
+    // balance: Number,
     friends: [{ type: Schema.Types.ObjectId, ref: 'User' }],
 
 });
